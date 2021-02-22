@@ -4,7 +4,17 @@ import datetime as dt
 import tkinter
 from tkinter import messagebox
 
-import winsound
+try:
+    import winsound
+except ImportError:
+    import os
+
+    def playsound(frequency, duration):
+        # apt-get install beep
+        os.system('beep -f %s -l %s' % (frequency, duration))
+else:
+    def playsound(frequency, duration):
+        winsound.Beep(frequency, duration)
 
 
 #  Setting up our individual times
@@ -14,7 +24,7 @@ delta_time = dt.timedelta(0, pomodoro)
 future_time = current_time + delta_time
 break_time = 5 * 60
 finish_break = current_time + \
-    dt.delta_time(0, pomodoro + break_time)  # break finishes
+    dt.timedelta(0, pomodoro + break_time)  # break finishes
 
 
 root = tkinter.Tk()

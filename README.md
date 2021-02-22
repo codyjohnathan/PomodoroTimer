@@ -3,10 +3,10 @@ Timer to increase productivity when working
 
 Aims of Project:
 - Explore the uses of Python Packages: 
-1. tkinter
-2. datetime
-3. winsound
-4. time
+  1. tkinter
+  2. datetime
+  3. winsound
+  4. time
 
 - Create a functioning pomodoro timer as study aid
 

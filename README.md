@@ -12,8 +12,9 @@ Aims of Project:
 
 - Expand as used
 
-Based on following tutorial code for Windows OS:
-https://medium.com/@fidel.esquivelestay/build-a-pomodoro-timer-using-python-d52509730f60
+Code references:
+- https://medium.com/@fidel.esquivelestay/build-a-pomodoro-timer-using-python-d52509730f60
+- https://stackoverflow.com/questions/12354586/python-what-are-the-nearest-linux-and-osx-equivalents-of-winsound-beep/19107422
 
 Learning Outcomes: 
 - utilised current time in order to use Pomodoro timer
